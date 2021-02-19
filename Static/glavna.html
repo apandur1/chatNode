@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="./Static/style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <ul id="poruke"></ul>
-    <form id="forma" action="">
-        <input id="input" autocomplete="off" />
-        <button>Send</button>
-    </form>
+    <div id = "glavnina">
+        <ul id="poruke"></ul>
+        <form id="forma" action="">
+            <input id="input" autocomplete="off" />
+            <button>Send</button>
+        </form>
+        <p id="nevidljivTyping"></p>
+    </div>
+    <div id = "online">
+        <ul id="onlineKorisnici"></ul>
+    </div>
     <script src="/socket.io/socket.io.js"></script>
-    <script src="../glavna.js"></script>
+    <script src="../Klijent/glavna.js"></script>
 </body>
 </html>
